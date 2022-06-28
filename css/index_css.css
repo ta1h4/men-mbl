@@ -178,19 +178,7 @@ display: none;
 }
 
 
-@media (max-width:860px){
-  #about{
-    display: none;
-  }
-  
- }
 
- @media (max-width:750px){
-  #careers{
-    display: none;
-  }
-  
- }
 
      @media (max-width:375px){
       .dropdown{
