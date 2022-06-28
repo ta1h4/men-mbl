@@ -193,7 +193,7 @@ display: none;
  }
 
      @media (max-width:375px){
-      .dropdown{
+/*       .dropdown{
         display: none;
       }
       .dropdown{
@@ -213,7 +213,7 @@ display: none;
       .contentaln{
         display: block;
         justify-content: center;
-      }
+      } */
       .contentaln .col{
         width: 100%;
       }
