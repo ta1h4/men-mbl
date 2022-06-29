@@ -148,7 +148,7 @@ justify-content: center;
     .about_content{
       width:100%;
       height: 500px;
-      background-image: url("../img/image-hero-desktop.png");
+background-image:  url("/img/image-hero-desktop.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
