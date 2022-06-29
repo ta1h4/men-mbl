@@ -184,7 +184,6 @@ display: none;
 }
 
 
-<<<<<<< HEAD
    @media (max-width:485px){
     .device{
       display: inline;
@@ -337,32 +336,6 @@ display: none;
       opacity: 0;
   }
   
-=======
-
-
-   @media (max-width:375px){
-/*       .dropdown{
-      display: none;
-    }
-    .dropdown{
-      display: none;
-    }
-    #reg{
-      display: none;
-    }
-    #login{
-      display: none;
-    }
-    .menuico{
-      display: block;
-      margin-top: 10px;
-      margin-left: 10px;
-    }
-    .contentaln{
-      display: block;
-      justify-content: center;
-    } */
->>>>>>> 7bdfeab700d200749a5a3d9ac0ef5014bed338dc
     .contentaln .col{
       width: 100%;
     }

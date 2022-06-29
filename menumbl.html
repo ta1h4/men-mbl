@@ -1,0 +1,174 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="C:\Users\muhammed\Desktop\kls\frontend_Montor\menu\css\index_css.css">
+	
+    <title> örnek3 </title>
+        <style>
+
+
+        </style>
+</head>
+<body>
+
+
+    <div class="device">
+        <div class="container">
+            <button id="burger" class="open-main-nav">
+                <span class="burger"></span>
+                <span class="burger-text">Menu</span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+           
+                <div class="logo"> <img src="img/logo.svg" alt=""> </div>
+
+                <ul>
+                        
+                            <div class="dropdown ">
+                                <span> asdas</span>
+                                 <div class="dropdown-content">
+                                 <div><a href="www.google.com"><img src="img/icon-todo.svg"> todo list</a></div>
+                                 <div><a href="www.google.com"><img src="img/icon-calendar.svg">calender</a></div>
+                                 <div><a href="www.google.com"><img src="img/icon-reminders.svg">remindes </a></div>
+                                 <div><a href="www.google.com"><img src="img/icon-planning.svg">planning </a></div>
+                               
+                               
+                                 </div>
+                               </div>
+                     
+                   
+                    <div class="dropdown ">
+                      <span> conpany</span>
+                       <div class="dropdown-content">
+                       <div><a href="www.google.com"> todo list</a></div>
+                       <div><a href="www.google.com">calender</a></div>
+                       <div><a href="www.google.com">remindes </a></div>
+                     
+                     
+                       </div>
+                     </div>
+                  
+                    <a href="#" id="careers">Careers</a>
+                    <a href="#" id="about">About</a>  
+                  
+                  </div>
+                   
+                  
+                  </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+	<div id="menudesktaop" class="container">
+		<div class="row">
+	  <div class="col col-2">
+		<div class="logo"> <img src="img/logo.svg" alt=""> </div>
+	  
+		<div class="dropdown ">
+		 <span> asdas</span>
+		  <div class="dropdown-content">
+		  <div><a href="www.google.com"><img src="img/icon-todo.svg"> todo list</a></div>
+		  <div><a href="www.google.com"><img src="img/icon-calendar.svg">calender</a></div>
+		  <div><a href="www.google.com"><img src="img/icon-reminders.svg">remindes </a></div>
+		  <div><a href="www.google.com"><img src="img/icon-planning.svg">planning </a></div>
+		
+		
+		  </div>
+		</div>
+		<div class="dropdown ">
+		  <span> conpany</span>
+		   <div class="dropdown-content">
+		   <div><a href="www.google.com"> todo list</a></div>
+		   <div><a href="www.google.com">calender</a></div>
+		   <div><a href="www.google.com">remindes </a></div>
+		 
+		 
+		   </div>
+		 </div>
+	  
+		<a href="#" id="careers">Careers</a>
+		<a href="#" id="about">About</a>  
+	  
+	  </div>
+	   
+	  
+	  <div class="col">
+	  
+		<div class="rightbtn">
+		  <a id="login" href="#">login</a>
+	   
+	   <button id="reg">register</button>
+	   <div class="menuico"><img src="img/icon-menu.svg"></div>
+	  
+	  
+	  </div>
+	  </div>
+	  
+		</div>
+	  </div>
+	  
+	  <div class="container ">
+		<div class="row center">
+		  <div class="contentaln">
+	  
+			<div class="col">
+			  <div class="about_content"></div>
+			</div>
+	  
+			<div class="col">
+			  <div class="mbl_center">
+				<h1>Make remote work</h1>
+				<p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar</p>
+		   <button > learn More</button>
+		   
+			  </div>
+			
+		 
+			</div>
+	  
+		   
+				  
+		   </div>
+		 </div>
+	  </div>
+		  
+	  
+
+
+<script>
+    let burger = document.getElementById('burger'),
+	 nav    = document.getElementById('main-nav'),
+	 slowmo = document.getElementById('slowmo');
+
+burger.addEventListener('click', function(e){
+	this.classList.toggle('is-open');
+	nav.classList.toggle('is-open');
+});
+
+slowmo.addEventListener('click', function(e){
+	this.classList.toggle('is-slowmo');
+});
+
+/* Onload demo - dirty timeout */
+let clickEvent = new Event('click');
+
+window.addEventListener('load', function(e) {
+	slowmo.dispatchEvent(clickEvent);
+	burger.dispatchEvent(clickEvent);
+	
+	setTimeout(function(){
+		burger.dispatchEvent(clickEvent);
+		
+		setTimeout(function(){
+			slowmo.dispatchEvent(clickEvent);
+		}, 500);
+	}, 500);
+});
+</script>
+    
+</body>
+</html>
