@@ -191,6 +191,9 @@ display: none;
     #menudesktaop{
       display: none;
     }
+    img{
+      margin-right: 8px;
+    }
     .main-nav {
       position: absolute;
       top: 0;
