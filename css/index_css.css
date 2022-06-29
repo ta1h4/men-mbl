@@ -1,72 +1,72 @@
 body{background-color: white;
+}
+  .container{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
   }
-    .container{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+  margin-bottom: 100px;
+  }
+  
+  .col{
+      display: flex;
+      flex-wrap: wrap;
+      width: 27%;
+    }  
+    .col-2{
+      width: 70%;
+      margin-right: 3%;
     }
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    margin-bottom: 100px;
-    }
-    
-    .col{
-        display: flex;
-        flex-wrap: wrap;
-        width: 27%;
-      }  
-      .col-2{
-        width: 70%;
-        margin-right: 3%;
-      }
 
-    .logo{
+  .logo{
 margin-top: 10px;
 margin-left: 50px;
-    }  
-    .dropdown {
-        position: relative;
-        display: inline-block;
-        margin-top: 5px;
-        margin-left: 30px;
-        font-size: 20px;
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 100px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 10px 10px;
-        z-index: 1;
-        border-radius: 10px;  
+  }  
+  .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 30px;
+      font-size: 20px;
     }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 10px 10px;
+      z-index: 1;
+      border-radius: 10px;  
+  }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
 
-      }
+    }
 
 span{
-    display: flex;
-    align-items: center;
-    margin: 0px;
-    color: rgb(102, 102, 102);
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  color: rgb(102, 102, 102);
+  cursor: pointer;
 
-  }
+}
 
 span::after{
-    content: '';
-    margin-left: 10px;
-    background-image: url("../img/icon-arrow-down.svg");
-    color: rgb(0, 0, 0);
-    display: block;
-    height: 10px;
-    width: 10px;
+  content: '';
+  margin-left: 10px;
+  background-image: url("../img/icon-arrow-down.svg");
+  color: rgb(0, 0, 0);
+  display: block;
+  height: 10px;
+  width: 10px;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -75,172 +75,306 @@ cursor: pointer;
 }
 
 span:hover::after{
-    display: block;
-    content: '';
-    color:black;
+  display: block;
+  content: '';
+  color:black;
 cursor: pointer;
-    height: 10px;
-    width: 10px;
-    background-image: url("../img/icon-arrow-up.svg");
-    background-repeat: no-repeat;
+  height: 10px;
+  width: 10px;
+  background-image: url("../img/icon-arrow-up.svg");
+  background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 }
 
-      a{
-        text-decoration: none;   
- margin-left: 30px;
- color: rgb(102, 102, 102);
- margin-top: 10px;
+    a{
+      text-decoration: none;   
+margin-left: 30px;
+color: rgb(102, 102, 102);
+margin-top: 10px;
 
-      }
+    }
 
-      a:hover{
-        color: rgb(0, 0, 0);
+    a:hover{
+      color: rgb(0, 0, 0);
 
-      }
-      img{
-        margin-right: 10px;
-      }
-      .dropdown-content a{
-        font-size: 14px;
-        margin-left: 10px;
-        color: rgb(102, 102, 102);
-        
-      }
+    }
+    img{
+      margin-right: 10px;
+    }
+    .dropdown-content a{
+      font-size: 14px;
+      margin-left: 10px;
+      color: rgb(102, 102, 102);
+      
+    }
 
-    .col  .rightbtn{
-        display: flex;
-        justify-content: right;
-        width: 100%;
-        margin-top: 0px;
-        height: auto;
-      }
-      .rightbtn button{
-        background:none;
-        width: 100px;
-        margin-left: 20px;
-        margin-right: 50px;
-        border-radius: 15px;
-        border: 2px solid rgb(102, 102, 102);
-        color: rgb(102, 102, 102);
+  .col  .rightbtn{
+      display: flex;
+      justify-content: right;
+      width: 100%;
+      margin-top: 0px;
+      height: auto;
+    }
+    .rightbtn button{
+      background:none;
+      width: 100px;
+      margin-left: 20px;
+      margin-right: 50px;
+      border-radius: 15px;
+      border: 2px solid rgb(102, 102, 102);
+      color: rgb(102, 102, 102);
 
-      }
+    }
 
-      button:hover{
-        color: black;
-        border: 2px solid black;
-      }
+    button:hover{
+      color: black;
+      border: 2px solid black;
+    }
 .center{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 }
-      .contentaln{
-        max-width: 1524px;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .contentaln .col{
-        width: 50%;
-      }
-      .about_content{
-        width:100%;
-        height: 500px;
-        background-image: url("../img/image-hero-desktop.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        
-     
-      }
-      h1{
-        font-size: 70px;
-        padding-right: 370px;
-      }
-      .contentaln p{
+    .contentaln{
+      max-width: 1524px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .contentaln .col{
+      width: 50%;
+    }
+    .about_content{
+      width:100%;
+      height: 500px;
+      background-image: url("../img/image-hero-desktop.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      
+   
+    }
+    h1{
+      font-size: 70px;
+      padding-right: 370px;
+    }
+    .contentaln p{
 font-size: 30px; 
-     }
+   }
 
-     .contentaln button{
-      width: 150px;
-      height: 50px;
-      background-color: black;
-      color: white;
-      border-radius: 10px;
-      cursor: pointer;
-     }
+   .contentaln button{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+   }
 
 .menuico{
 display: none;
 
 }
+.device{
+  display: none;
+}
+#menudesktaop{
+  display: inline;
+}
 
 
+   @media (max-width:485px){
+    .device{
+      display: inline;
+    }
+    #menudesktaop{
+      display: none;
+    }
+    .main-nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      text-align: center;
+      background: #FFF;
+      opacity: 0;
+      z-index: -1;
+      visibility: hidden;
+      transition: all .375s;
+  }
+  
+  .main-nav.is-open {
+      opacity: 1;
+      z-index: 100;
+      visibility: visible;
+  }
+  
+  .main-nav::before {
+     content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: -15px;
+      background: #FEDC2A;
+      transform-origin: 0 0;
+      transform: skew(-14deg) translateX(-120%);
+      transition: all .25s .1s;
+  }
+  
+  .main-nav.is-open::before {
+      transform: skew(-24deg) translateX(0);
+  }
+  
+  .main-nav ul {
+      display: inline-flex;
+      flex-direction: column;
+      height: 100%; 
+      align-items: flex-end;
+      justify-content: center;
+    gap: 30px;
+    margin-right: 10px;
+      transform: translateX(-25%) skew(-18deg);
+  }
+  
+  .main-nav li {
+      display: block;
+      margin: .5rem 0;
+      text-align: right;
+      transform: skew(16deg);
+  }
+  
+  
+  
+  .main-nav.is-open a {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  .main-nav li:nth-child(1) a {
+    transition: all 275ms 175ms
+  }
+  .main-nav li:nth-child(2) a {
+    transition: all 275ms 225ms
+  }
+  .main-nav li:nth-child(3) a {
+    transition: all 275ms 275ms
+  }
+  .main-nav li:nth-child(4) a {
+    transition: all 275ms 325ms
+  }
+  .main-nav li:nth-child(5) a {
+    transition: all 275ms 375ms
+  }
+  
+  
+  .main-nav ul,
+  .main-nav li {
+    list-style: none;
+    padding: 0;
+  }
+  .main-nav a {
+    display: block;
+    padding: 0px ;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .open-main-nav {
+    position: absolute;
+    top: 15px;
+    padding-top: 20px;
+    right: 15px;
+    z-index: 1000;
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+  .open-main-nav:focus {
+    outline: none;
+  }
+  .burger {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 4px;
+    margin: 0 auto;
+    background: #5A3B5D;
+    transform: skew(5deg);
+    transition: all .275s;
+  }
+  
+  .burger:after,
+  .burger:before {
+    content: '';
+    display: block;
+    height: 100%;
+    background: #5A3B5D;
+    transition: all .275s;
+  }
+  
+  .burger:after {
+    transform: translateY(-12px) translateX(-2px) skew(-20deg);
+  }
+  
+  .burger:before {
+    transform: translateY(-16px) skew(-10deg);
+  }
+  
+  .is-open .burger {
+    transform: skew(5deg) translateY(-8px) rotate(-45deg);
+  }
+  
+  .is-open .burger:before {
+    transform: translateY(0px) skew(-10deg) rotate(75deg);
+  }
+  
+  .is-open .burger:after {
+    transform: translateY(-12px) translateX(10px) skew(-20deg);
+      opacity: 0;
+  }
+  
+    .contentaln .col{
+      width: 100%;
+    }
 
+    .about_content{
+      width:100%;
+      height: 280px;
+      background-image: url("../img/image-hero-mobile.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      
+   
+    }
 
-     @media (max-width:375px){
-      .dropdown{
-        display: none;
-      }
-      .dropdown{
-        display: none;
-      }
-      #reg{
-        display: none;
-      }
-      #login{
-        display: none;
-      }
-      .menuico{
-        display: block;
-        margin-top: 10px;
-        margin-left: 10px;
-      }
-      .contentaln{
-        display: block;
-        justify-content: center;
-      }
-      .contentaln .col{
-        width: 100%;
-      }
-
-      .about_content{
-        width:100%;
-        height: 280px;
-        background-image: url("../img/image-hero-mobile.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        
-     
-      }
-
-      h1{
-        font-size: 40px;
-        
-        
-        padding-right: 0px;
-      }
-      .contentaln p{
+    h1{
+      font-size: 40px;
+      
+      
+      padding-right: 0px;
+    }
+    .contentaln p{
 font-size: 30px; 
 
-     }
-     .mbl_center{
-      text-align: center;
-     }
+   }
+   .mbl_center{
+    text-align: center;
+   }
 
-     .contentaln button{
-      width: 150px;
-      height: 50px;
-      background-color: black;
-      color: white;
-      border-radius: 10px;
-      cursor: pointer;
-     }
+   .contentaln button{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+   }
 
-     
+   
 
-     }
-     
+   }
+   

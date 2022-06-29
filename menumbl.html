@@ -4,220 +4,12 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="..\css\index_css.css">
+    <link rel="stylesheet" href="C:\Users\muhammed\Desktop\kls\frontend_Montor\menu\css\index_css.css">
 	
     <title> örnek3 </title>
         <style>
-            /* Main menu positionning */
-.main-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    background: #FFF;
-    opacity: 0;
-    z-index: -1;
-    visibility: hidden;
-    transition: all .375s;
-}
-
-.main-nav.is-open {
-    opacity: 1;
-    z-index: 100;
-    visibility: visible;
-}
-
-/* Yellow band effect */
-.main-nav::before {
-	 content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: -15px;
-    background: #FEDC2A;
-    transform-origin: 0 0;
-    transform: skew(-14deg) translateX(-120%);
-    transition: all .25s .1s;
-}
-
-.main-nav.is-open::before {
-    transform: skew(-24deg) translateX(0);
-}
-
-/* Skewing effect on menu links */
-.main-nav ul {
-    display: inline-flex;
-    flex-direction: column;
-    height: 93%; /* Should be 100%, but we have a notice message :D */
-    align-items: flex-end;
-    justify-content: center;
-    transform: translateX(-25%) skew(-18deg);
-}
-
-.main-nav li {
-    display: block;
-    margin: .5rem 0;
-    text-align: right;
-    transform: skew(16deg);
-}
-
-/* Apparition effect on links */
-.main-nav a {
-    opacity: 0;
-    transform: translateY(-30px);
-}
-
-.main-nav.is-open a {
-    opacity: 1;
-    transform: translateY(0);
-}
-.main-nav li:nth-child(1) a {
-	transition: all 275ms 175ms
-}
-.main-nav li:nth-child(2) a {
-	transition: all 275ms 225ms
-}
-.main-nav li:nth-child(3) a {
-	transition: all 275ms 275ms
-}
-.main-nav li:nth-child(4) a {
-	transition: all 275ms 325ms
-}
-.main-nav li:nth-child(5) a {
-	transition: all 275ms 375ms
-}
 
 
-/* Decoration */
-.main-nav ul,
-.main-nav li {
-	list-style: none;
-	padding: 0;
-}
-.main-nav a {
-	display: block;
-	padding: 5px 0;
-	color: #5A3B5D;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-/* Burger Style: @see: https://codepen.io/CreativeJuiz/full/oMZNXy */
-.open-main-nav {
-	position: absolute;
-	top: 15px;
-	padding-top: 20px;
-	right: 15px;
-	z-index: 1000;
-	background: none;
-	border: 0;
-	cursor: pointer;
-}
-.open-main-nav:focus {
-	outline: none;
-}
-.burger {
-	position: relative;
-	display: block;
-	width: 28px;
-	height: 4px;
-	margin: 0 auto;
-	background: #5A3B5D;
-	transform: skew(5deg);
-	transition: all .275s;
-}
-
-.burger:after,
-.burger:before {
-	content: '';
-	display: block;
-	height: 100%;
-	background: #5A3B5D;
-	transition: all .275s;
-}
-
-.burger:after {
-	transform: translateY(-12px) translateX(-2px) skew(-20deg);
-}
-
-.burger:before {
-	transform: translateY(-16px) skew(-10deg);
-}
-
-/* Toggle State part */
-.is-open .burger {
-	transform: skew(5deg) translateY(-8px) rotate(-45deg);
-}
-
-.is-open .burger:before {
-	transform: translateY(0px) skew(-10deg) rotate(75deg);
-}
-
-.is-open .burger:after {
-	transform: translateY(-12px) translateX(10px) skew(-20deg);
-    opacity: 0;
-}
-
-/* MENU Text part */
-
-.burger-text {
-	display: block;
-	font-size: .675rem;
-	letter-spacing: .05em;
-	margin-top: .5em;
-	text-transform: uppercase;
-	font-weight: 500;
-	text-align: center;
-	color: #5A3B5D;
-}
-
-
-
-.container {
-	position: absolute;
-	top: 0; right: 0;
-	bottom: 0; left: 0;
-	overflow: hidden;
-	background: linear-gradient(to bottom, #eee, #ddd);
-}
-
-html {
-	height: 100%;
-}
-body {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-
-
-/* Notice */
-.notice {
-	position: absolute;
-	bottom: -15px;
-	left: 0; right: 0;
-	padding: 20px;
-	background: #F2F2F2;
-	color: #5A3B5D;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.5;
-	z-index: 100;
-	text-align: center;
-}
-.notice strong {
-	font-weight: 700;
-}
-.notice a {
-	padding: 2px 3px;
-	background: #FEDC2A;
-	text-decoration: none;
-}
         </style>
 </head>
 <body>
@@ -271,7 +63,80 @@ body {
         </div>
     </div>
 
-
+	<div id="menudesktaop" class="container">
+		<div class="row">
+	  <div class="col col-2">
+		<div class="logo"> <img src="img/logo.svg" alt=""> </div>
+	  
+		<div class="dropdown ">
+		 <span> asdas</span>
+		  <div class="dropdown-content">
+		  <div><a href="www.google.com"><img src="img/icon-todo.svg"> todo list</a></div>
+		  <div><a href="www.google.com"><img src="img/icon-calendar.svg">calender</a></div>
+		  <div><a href="www.google.com"><img src="img/icon-reminders.svg">remindes </a></div>
+		  <div><a href="www.google.com"><img src="img/icon-planning.svg">planning </a></div>
+		
+		
+		  </div>
+		</div>
+		<div class="dropdown ">
+		  <span> conpany</span>
+		   <div class="dropdown-content">
+		   <div><a href="www.google.com"> todo list</a></div>
+		   <div><a href="www.google.com">calender</a></div>
+		   <div><a href="www.google.com">remindes </a></div>
+		 
+		 
+		   </div>
+		 </div>
+	  
+		<a href="#" id="careers">Careers</a>
+		<a href="#" id="about">About</a>  
+	  
+	  </div>
+	   
+	  
+	  <div class="col">
+	  
+		<div class="rightbtn">
+		  <a id="login" href="#">login</a>
+	   
+	   <button id="reg">register</button>
+	   <div class="menuico"><img src="img/icon-menu.svg"></div>
+	  
+	  
+	  </div>
+	  </div>
+	  
+		</div>
+	  </div>
+	  
+	  <div class="container ">
+		<div class="row center">
+		  <div class="contentaln">
+	  
+			<div class="col">
+			  <div class="about_content"></div>
+			</div>
+	  
+			<div class="col">
+			  <div class="mbl_center">
+				<h1>Make remote work</h1>
+				<p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar</p>
+		   <button > learn More</button>
+		   
+			  </div>
+			
+		 
+			</div>
+	  
+		   
+				  
+		   </div>
+		 </div>
+	  </div>
+		  
+	  
 
 
 <script>
@@ -284,9 +149,7 @@ burger.addEventListener('click', function(e){
 	nav.classList.toggle('is-open');
 });
 
-slowmo.addEventListener('click', function(e){
-	this.classList.toggle('is-slowmo');
-});
+
 
 /* Onload demo - dirty timeout */
 let clickEvent = new Event('click');
